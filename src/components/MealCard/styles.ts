@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     margin: 16,
     height: 150,
     borderRadius: 8,
+    // on iOS you have to set backgroundColor to make shadow works well
     backgroundColor: Colors.ligth,
     elevation: 4,
     shadowColor: 'black',
