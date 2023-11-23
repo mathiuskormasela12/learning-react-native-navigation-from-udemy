@@ -1,7 +1,7 @@
 import MealsScreen from './MealsScreen'
-import MealOverview from './MealOverview'
+import MealsOverview from './MealOverview'
 
 export {
   MealsScreen,
-  MealOverview
+  MealsOverview
 }

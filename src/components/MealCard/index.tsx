@@ -5,13 +5,13 @@ import styles from './styles'
 import { useNavigation } from '@react-navigation/native'
 import { type RootStackScreenProps } from '../../types/router'
 
-const MealCard: React.FC<IMealCardProps> = ({ id, title, color, navigation: n2 }) => {
+const MealCard: React.FC<IMealCardProps> = ({ id: categoryId, title, color, navigation: n2 }) => {
   // To define navigation to move between screen
-  const navigation = useNavigation<RootStackScreenProps<'MealScreen'>['navigation']>()
+  const navigation = useNavigation<RootStackScreenProps<'MealsScreen'>['navigation']>()
 
   const handleNavigation = useCallback(() => {
-    navigation.navigate('MealOverview', {
-      id
+    navigation.navigate('MealsOverview', {
+      categoryId
     })
   }, [])
 

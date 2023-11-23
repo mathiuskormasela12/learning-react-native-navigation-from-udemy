@@ -4,5 +4,5 @@ export interface IMealCardProps {
   title: string
   color: string
   id: string
-  navigation: RootStackScreenProps<'MealScreen'>['navigation']
+  navigation: RootStackScreenProps<'MealsScreen'>['navigation']
 }

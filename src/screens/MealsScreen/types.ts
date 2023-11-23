@@ -9,10 +9,10 @@ export interface IHandleRenderCardProps {
 
 export type HandleRenderCard = ListRenderItem<IHandleRenderCardProps>
 
-export type MealsScreen = (navigation: RootStackScreenProps<'MealScreen'>['navigation']) => {
+export type MealsScreen = (navigation: RootStackScreenProps<'MealsScreen'>['navigation']) => {
   handleRenderCard: HandleRenderCard
 }
 
 export interface IMealsScreenProps {
-  navigation: RootStackScreenProps<'MealScreen'>['navigation']
+  navigation: RootStackScreenProps<'MealsScreen'>['navigation']
 }

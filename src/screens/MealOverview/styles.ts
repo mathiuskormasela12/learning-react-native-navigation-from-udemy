@@ -4,7 +4,11 @@ const styles = StyleSheet.create({
   page: {
     flex: 1
   },
-  safeAreaView: {
+  wrapper: {
+    flex: 1,
+    padding: 16
+  },
+  flatList: {
     flex: 1
   }
 })
