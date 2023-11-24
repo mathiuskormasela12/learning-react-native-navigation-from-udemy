@@ -31,17 +31,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 18,
     textAlign: 'center'
-  },
-  footer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 8
-  },
-  text: {
-    fontWeight: 'bold',
-    fontSize: 12,
-    marginHorizontal: 4
   }
 })
 

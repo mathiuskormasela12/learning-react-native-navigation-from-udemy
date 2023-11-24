@@ -3,5 +3,6 @@ export interface ICard {
   imageUrl: string
   duration: number
   complexity: string
+  id: string
   affordability: string
 }

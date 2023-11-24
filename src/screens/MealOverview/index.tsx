@@ -29,6 +29,7 @@ const MealsOverview: React.FC<IMealOverviewProps> = ({ route, navigation }) => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => {
           const mealItemProps = {
+            id: item.id,
             title: item.title,
             imageUrl: item.imageUrl,
             affordability: item.affordability,
