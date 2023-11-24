@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { MealDetail, MealsOverview } from './screens'
 import { type RootStackParamList } from './types/router'
 import Drawer from './Drawer'
+import BottomTab from '../BottomTabs'
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
 
@@ -12,7 +13,7 @@ const Router: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='MealsScreenDrawer'
+        initialRouteName='MyBottomTab'
 
         // Options for all screen, it will be applied to all screen
         screenOptions={{
@@ -46,6 +47,11 @@ const Router: React.FC = () => {
         <Stack.Screen
           name='MealDetail'
           component={MealDetail}
+        />
+
+        <Stack.Screen
+          name='MyBottomTab'
+          component={BottomTab}
         />
       </Stack.Navigator>
     </NavigationContainer>
